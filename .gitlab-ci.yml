@@ -1,0 +1,66 @@
+default:
+  image: golikvn/s21_containers:latest
+
+stages:
+  - style
+  - build
+  - test
+  - doc
+
+style:
+  stage: style
+  script:
+    - cd src
+    - make _start_style_ci
+
+build:
+  stage: build
+  needs:
+    - style
+  artifacts:
+    paths:
+      - src/lib_s21_containers/*
+    expire_in: 30 days
+  script:
+    - cd src
+    - make all
+
+test:
+  stage: test
+  needs:
+    - build
+  script:
+    - cd src
+    - make test
+
+valgrind:
+  stage: test
+  needs:
+    - test
+  script:
+    - cd src
+    - make test-valgrind
+
+coverage:
+  stage: test
+  needs:
+    - valgrind
+  artifacts:
+    paths:
+      - src/report/*
+    expire_in: 30 days
+  script:
+    - cd src
+    - make test-coverage
+
+doxygen:
+  stage: doc
+  needs:
+    - valgrind
+  artifacts:
+    paths:
+      - src/docs/*
+    expire_in: 30 days
+  script:
+    - cd src
+    - make doc

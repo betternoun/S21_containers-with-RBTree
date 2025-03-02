@@ -1,0 +1,2 @@
+/usr/bin/ar qc libs21_containers.a
+/usr/bin/ranlib libs21_containers.a

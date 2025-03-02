@@ -1,0 +1,659 @@
+cd tests/ && \
+mkdir -p build && \
+cd build && \
+cmake .. -DCMAKE_BUILD_TYPE=Coverage && \
+make && \
+./run_tests
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GTest: /usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake (found version "1.15.0")
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /root/project/tests/build
+make[1]: Entering directory '/root/project/tests/build'
+make[2]: Entering directory '/root/project/tests/build'
+make[3]: Entering directory '/root/project/tests/build'
+make[3]: Leaving directory '/root/project/tests/build'
+make[3]: Entering directory '/root/project/tests/build'
+[  9%] Linking CXX static library libs21_containers.a
+make[3]: Leaving directory '/root/project/tests/build'
+[  9%] Built target s21_containers
+make[3]: Entering directory '/root/project/tests/build'
+make[3]: Leaving directory '/root/project/tests/build'
+make[3]: Entering directory '/root/project/tests/build'
+[ 18%] Building CXX object CMakeFiles/run_tests.dir/containers/test_list.cpp.o
+[ 27%] Building CXX object CMakeFiles/run_tests.dir/containers/test_map.cpp.o
+[ 36%] Building CXX object CMakeFiles/run_tests.dir/containers/test_queue.cpp.o
+[ 45%] Building CXX object CMakeFiles/run_tests.dir/containers/test_set.cpp.o
+[ 54%] Building CXX object CMakeFiles/run_tests.dir/containers/test_stack.cpp.o
+[ 63%] Building CXX object CMakeFiles/run_tests.dir/containers/test_tree.cpp.o
+[ 72%] Building CXX object CMakeFiles/run_tests.dir/containers/test_vector.cpp.o
+[ 81%] Building CXX object CMakeFiles/run_tests.dir/containersplus/test_array.cpp.o
+[ 90%] Building CXX object CMakeFiles/run_tests.dir/containersplus/test_multiset.cpp.o
+[100%] Linking CXX executable run_tests
+make[3]: Leaving directory '/root/project/tests/build'
+[100%] Built target run_tests
+make[2]: Leaving directory '/root/project/tests/build'
+make[1]: Leaving directory '/root/project/tests/build'
+Running main() from ./googletest/src/gtest_main.cc
+[==========] Running 288 tests from 10 test suites.
+[----------] Global test environment set-up.
+[----------] 5 tests from ListExceptionTest
+[ RUN      ] ListExceptionTest.InitializerListConstructorException
+[       OK ] ListExceptionTest.InitializerListConstructorException (0 ms)
+[ RUN      ] ListExceptionTest.ListRemainsValidAfterException
+[       OK ] ListExceptionTest.ListRemainsValidAfterException (0 ms)
+[ RUN      ] ListExceptionTest.PartialInsertionRollback
+[       OK ] ListExceptionTest.PartialInsertionRollback (0 ms)
+[ RUN      ] ListExceptionTest.PushBackExceptionSafety
+[       OK ] ListExceptionTest.PushBackExceptionSafety (0 ms)
+[ RUN      ] ListExceptionTest.MoveAssignmentAfterException
+[       OK ] ListExceptionTest.MoveAssignmentAfterException (0 ms)
+[----------] 5 tests from ListExceptionTest (0 ms total)
+
+[----------] 61 tests from ListTest
+[ RUN      ] ListTest.DefaultConstructor
+[       OK ] ListTest.DefaultConstructor (0 ms)
+[ RUN      ] ListTest.SizeConstructor
+[       OK ] ListTest.SizeConstructor (0 ms)
+[ RUN      ] ListTest.InitializerListConstructor
+[       OK ] ListTest.InitializerListConstructor (0 ms)
+[ RUN      ] ListTest.CopyConstructor
+[       OK ] ListTest.CopyConstructor (0 ms)
+[ RUN      ] ListTest.AssignmentOperator
+[       OK ] ListTest.AssignmentOperator (0 ms)
+[ RUN      ] ListTest.PushBack
+[       OK ] ListTest.PushBack (0 ms)
+[ RUN      ] ListTest.PushFront
+[       OK ] ListTest.PushFront (0 ms)
+[ RUN      ] ListTest.PopBack
+[       OK ] ListTest.PopBack (0 ms)
+[ RUN      ] ListTest.PopFront
+[       OK ] ListTest.PopFront (0 ms)
+[ RUN      ] ListTest.Clear
+[       OK ] ListTest.Clear (0 ms)
+[ RUN      ] ListTest.Swap
+[       OK ] ListTest.Swap (0 ms)
+[ RUN      ] ListTest.Merge
+[       OK ] ListTest.Merge (0 ms)
+[ RUN      ] ListTest.Reverse
+[       OK ] ListTest.Reverse (0 ms)
+[ RUN      ] ListTest.Unique
+[       OK ] ListTest.Unique (0 ms)
+[ RUN      ] ListTest.Sort
+[       OK ] ListTest.Sort (0 ms)
+[ RUN      ] ListTest.PopFront_EmptyList
+[       OK ] ListTest.PopFront_EmptyList (0 ms)
+[ RUN      ] ListTest.SingleElementList
+[       OK ] ListTest.SingleElementList (0 ms)
+[ RUN      ] ListTest.IteratorValidityAfterInsert
+[       OK ] ListTest.IteratorValidityAfterInsert (0 ms)
+[ RUN      ] ListTest.MoveConstructor
+[       OK ] ListTest.MoveConstructor (0 ms)
+[ RUN      ] ListTest.MoveAssignmentOperator
+[       OK ] ListTest.MoveAssignmentOperator (0 ms)
+[ RUN      ] ListTest.Erase
+[       OK ] ListTest.Erase (0 ms)
+[ RUN      ] ListTest.Splice
+[       OK ] ListTest.Splice (0 ms)
+[ RUN      ] ListTest.ConstIterators
+[       OK ] ListTest.ConstIterators (0 ms)
+[ RUN      ] ListTest.MaxSize
+[       OK ] ListTest.MaxSize (0 ms)
+[ RUN      ] ListTest.InsertPositions
+[       OK ] ListTest.InsertPositions (0 ms)
+[ RUN      ] ListTest.EraseBoundaries
+[       OK ] ListTest.EraseBoundaries (0 ms)
+[ RUN      ] ListTest.PopBackException
+[       OK ] ListTest.PopBackException (0 ms)
+[ RUN      ] ListTest.PopBackOnEmptyAfterClear
+[       OK ] ListTest.PopBackOnEmptyAfterClear (0 ms)
+[ RUN      ] ListTest.ConstMethods
+[       OK ] ListTest.ConstMethods (0 ms)
+[ RUN      ] ListTest.LargeData
+[       OK ] ListTest.LargeData (0 ms)
+[ RUN      ] ListTest.InsertInvalidIterator
+[       OK ] ListTest.InsertInvalidIterator (0 ms)
+[ RUN      ] ListTest.EraseInvalidIterator
+[       OK ] ListTest.EraseInvalidIterator (0 ms)
+[ RUN      ] ListTest.EraseEndIterator
+[       OK ] ListTest.EraseEndIterator (0 ms)
+[ RUN      ] ListTest.InsertMany
+[       OK ] ListTest.InsertMany (0 ms)
+[ RUN      ] ListTest.InsertManyBack
+[       OK ] ListTest.InsertManyBack (0 ms)
+[ RUN      ] ListTest.InsertManyFront
+[       OK ] ListTest.InsertManyFront (0 ms)
+[ RUN      ] ListTest.InsertManyIntoEmptyList
+[       OK ] ListTest.InsertManyIntoEmptyList (0 ms)
+[ RUN      ] ListTest.InsertManyFrontWithoutArguments
+[       OK ] ListTest.InsertManyFrontWithoutArguments (0 ms)
+[ RUN      ] ListTest.InsertManyCombinationMethods
+[       OK ] ListTest.InsertManyCombinationMethods (0 ms)
+[ RUN      ] ListTest.InsertManyInvalidIterator
+[       OK ] ListTest.InsertManyInvalidIterator (0 ms)
+[ RUN      ] ListTest.IteratorDecrement
+[       OK ] ListTest.IteratorDecrement (0 ms)
+[ RUN      ] ListTest.ConstIteratorDecrement
+[       OK ] ListTest.ConstIteratorDecrement (0 ms)
+[ RUN      ] ListTest.DecrementFromBegin
+[       OK ] ListTest.DecrementFromBegin (0 ms)
+[ RUN      ] ListTest.DecrementEndIterator
+[       OK ] ListTest.DecrementEndIterator (0 ms)
+[ RUN      ] ListTest.IteratorDecrementFromEnd
+[       OK ] ListTest.IteratorDecrementFromEnd (0 ms)
+[ RUN      ] ListTest.ConstIteratorDecrementFromEnd
+[       OK ] ListTest.ConstIteratorDecrementFromEnd (0 ms)
+[ RUN      ] ListTest.MoveConstructorWithEmptyList
+[       OK ] ListTest.MoveConstructorWithEmptyList (0 ms)
+[ RUN      ] ListTest.MergeWithEmptyList
+[       OK ] ListTest.MergeWithEmptyList (0 ms)
+[ RUN      ] ListTest.MoveAssignmentWithEmptyList
+[       OK ] ListTest.MoveAssignmentWithEmptyList (0 ms)
+[ RUN      ] ListTest.UniqueMultipleDuplicates
+[       OK ] ListTest.UniqueMultipleDuplicates (0 ms)
+[ RUN      ] ListTest.SpliceEmptyList
+[       OK ] ListTest.SpliceEmptyList (0 ms)
+[ RUN      ] ListTest.MergeWithEmptyCurrentList
+[       OK ] ListTest.MergeWithEmptyCurrentList (0 ms)
+[ RUN      ] ListTest.MergeOrder
+[       OK ] ListTest.MergeOrder (0 ms)
+[ RUN      ] ListTest.MergeTailAssignment
+[       OK ] ListTest.MergeTailAssignment (0 ms)
+[ RUN      ] ListTest.MergeEmptyTailCase
+[       OK ] ListTest.MergeEmptyTailCase (0 ms)
+[ RUN      ] ListTest.MergeTailAssignmentEdgeCase
+[       OK ] ListTest.MergeTailAssignmentEdgeCase (0 ms)
+[ RUN      ] ListTest.MergeTailExactMatchCase
+[       OK ] ListTest.MergeTailExactMatchCase (0 ms)
+[ RUN      ] ListTest.SelfAssignment
+[       OK ] ListTest.SelfAssignment (0 ms)
+[ RUN      ] ListTest.AssignmentEmptyList
+[       OK ] ListTest.AssignmentEmptyList (0 ms)
+[ RUN      ] ListTest.MoveAssignmentWithNonEmpty
+[       OK ] ListTest.MoveAssignmentWithNonEmpty (0 ms)
+[ RUN      ] ListTest.MoveSelfAssignment
+[       OK ] ListTest.MoveSelfAssignment (0 ms)
+[----------] 61 tests from ListTest (5 ms total)
+
+[----------] 20 tests from MapTest
+[ RUN      ] MapTest.DefaultConstructor
+[       OK ] MapTest.DefaultConstructor (0 ms)
+[ RUN      ] MapTest.InitializerListConstructor
+[       OK ] MapTest.InitializerListConstructor (0 ms)
+[ RUN      ] MapTest.CopyConstructor
+[       OK ] MapTest.CopyConstructor (0 ms)
+[ RUN      ] MapTest.AssignmentOperator
+[       OK ] MapTest.AssignmentOperator (0 ms)
+[ RUN      ] MapTest.Insert
+[       OK ] MapTest.Insert (0 ms)
+[ RUN      ] MapTest.Erase
+[       OK ] MapTest.Erase (0 ms)
+[ RUN      ] MapTest.At
+[       OK ] MapTest.At (0 ms)
+[ RUN      ] MapTest.Swap
+[       OK ] MapTest.Swap (0 ms)
+[ RUN      ] MapTest.Clear
+[       OK ] MapTest.Clear (0 ms)
+[ RUN      ] MapTest.Merge
+[       OK ] MapTest.Merge (0 ms)
+[ RUN      ] MapTest.Contains
+[       OK ] MapTest.Contains (0 ms)
+[ RUN      ] MapTest.OperatorSquareBrackets
+[       OK ] MapTest.OperatorSquareBrackets (0 ms)
+[ RUN      ] MapTest.EraseInvalidIterator
+[       OK ] MapTest.EraseInvalidIterator (0 ms)
+[ RUN      ] MapTest.InsertMany
+[       OK ] MapTest.InsertMany (0 ms)
+[ RUN      ] MapTest.InsertManyEmpty
+[       OK ] MapTest.InsertManyEmpty (0 ms)
+[ RUN      ] MapTest.InsertManyDuplicateKeys
+[       OK ] MapTest.InsertManyDuplicateKeys (0 ms)
+[ RUN      ] MapTest.ConstMethods
+[       OK ] MapTest.ConstMethods (0 ms)
+[ RUN      ] MapTest.MainSequenceTest
+[       OK ] MapTest.MainSequenceTest (0 ms)
+[ RUN      ] MapTest.OrderPreservationTest
+[       OK ] MapTest.OrderPreservationTest (0 ms)
+[ RUN      ] MapTest.MergeWithDuplicatesTest
+[       OK ] MapTest.MergeWithDuplicatesTest (0 ms)
+[----------] 20 tests from MapTest (1 ms total)
+
+[----------] 27 tests from QueueTest
+[ RUN      ] QueueTest.DefaultConstructor
+[       OK ] QueueTest.DefaultConstructor (0 ms)
+[ RUN      ] QueueTest.InitializerListConstructor
+[       OK ] QueueTest.InitializerListConstructor (0 ms)
+[ RUN      ] QueueTest.CopyConstructor
+[       OK ] QueueTest.CopyConstructor (0 ms)
+[ RUN      ] QueueTest.MoveConstructor
+[       OK ] QueueTest.MoveConstructor (0 ms)
+[ RUN      ] QueueTest.MoveAssignmentOperator
+[       OK ] QueueTest.MoveAssignmentOperator (0 ms)
+[ RUN      ] QueueTest.PushAndPop
+[       OK ] QueueTest.PushAndPop (0 ms)
+[ RUN      ] QueueTest.Swap
+[       OK ] QueueTest.Swap (0 ms)
+[ RUN      ] QueueTest.Front
+[       OK ] QueueTest.Front (0 ms)
+[ RUN      ] QueueTest.Back
+[       OK ] QueueTest.Back (0 ms)
+[ RUN      ] QueueTest.Empty
+[       OK ] QueueTest.Empty (0 ms)
+[ RUN      ] QueueTest.Size
+[       OK ] QueueTest.Size (0 ms)
+[ RUN      ] QueueTest.ConstMethods
+[       OK ] QueueTest.ConstMethods (0 ms)
+[ RUN      ] QueueTest.InsertManyBack
+[       OK ] QueueTest.InsertManyBack (0 ms)
+[ RUN      ] QueueTest.CopyAssignmentOperator
+[       OK ] QueueTest.CopyAssignmentOperator (0 ms)
+[ RUN      ] QueueTest.SwapWithEmpty
+[       OK ] QueueTest.SwapWithEmpty (0 ms)
+[ RUN      ] QueueTest.PopEmptyQueue
+[       OK ] QueueTest.PopEmptyQueue (0 ms)
+[ RUN      ] QueueTest.FrontEmptyQueue
+[       OK ] QueueTest.FrontEmptyQueue (0 ms)
+[ RUN      ] QueueTest.BackEmptyQueue
+[       OK ] QueueTest.BackEmptyQueue (0 ms)
+[ RUN      ] QueueTest.InsertManyBackEmpty
+[       OK ] QueueTest.InsertManyBackEmpty (0 ms)
+[ RUN      ] QueueTest.CustomType
+[       OK ] QueueTest.CustomType (0 ms)
+[ RUN      ] QueueTest.LargeQueue
+[       OK ] QueueTest.LargeQueue (33 ms)
+[ RUN      ] QueueTest.DifferentContainer
+[       OK ] QueueTest.DifferentContainer (0 ms)
+[ RUN      ] QueueTest.ConstQueue
+[       OK ] QueueTest.ConstQueue (0 ms)
+[ RUN      ] QueueTest.MoveElements
+[       OK ] QueueTest.MoveElements (0 ms)
+[ RUN      ] QueueTest.NoexceptMethods
+[       OK ] QueueTest.NoexceptMethods (0 ms)
+[ RUN      ] QueueTest.EmptyAfterMove
+[       OK ] QueueTest.EmptyAfterMove (0 ms)
+[ RUN      ] QueueTest.EmptyAfterSwap
+[       OK ] QueueTest.EmptyAfterSwap (0 ms)
+[----------] 27 tests from QueueTest (36 ms total)
+
+[----------] 22 tests from SetTest
+[ RUN      ] SetTest.DefaultConstructor
+[       OK ] SetTest.DefaultConstructor (0 ms)
+[ RUN      ] SetTest.InitializerListConstructor
+[       OK ] SetTest.InitializerListConstructor (0 ms)
+[ RUN      ] SetTest.CopyConstructor
+[       OK ] SetTest.CopyConstructor (0 ms)
+[ RUN      ] SetTest.AssignmentOperator
+[       OK ] SetTest.AssignmentOperator (0 ms)
+[ RUN      ] SetTest.Insert
+[       OK ] SetTest.Insert (0 ms)
+[ RUN      ] SetTest.Erase
+[       OK ] SetTest.Erase (0 ms)
+[ RUN      ] SetTest.EraseEndIterator
+[       OK ] SetTest.EraseEndIterator (0 ms)
+[ RUN      ] SetTest.EraseInvalidIterator
+[       OK ] SetTest.EraseInvalidIterator (0 ms)
+[ RUN      ] SetTest.InsertExistingElement
+[       OK ] SetTest.InsertExistingElement (0 ms)
+[ RUN      ] SetTest.Find
+[       OK ] SetTest.Find (0 ms)
+[ RUN      ] SetTest.Contains
+[       OK ] SetTest.Contains (0 ms)
+[ RUN      ] SetTest.Swap
+[       OK ] SetTest.Swap (0 ms)
+[ RUN      ] SetTest.Merge
+[       OK ] SetTest.Merge (0 ms)
+[ RUN      ] SetTest.Clear
+[       OK ] SetTest.Clear (0 ms)
+[ RUN      ] SetTest.Iterators
+[       OK ] SetTest.Iterators (0 ms)
+[ RUN      ] SetTest.MaxSize
+[       OK ] SetTest.MaxSize (0 ms)
+[ RUN      ] SetTest.InsertManyMultipleElements
+[       OK ] SetTest.InsertManyMultipleElements (0 ms)
+[ RUN      ] SetTest.InsertManySingleNewElement
+[       OK ] SetTest.InsertManySingleNewElement (0 ms)
+[ RUN      ] SetTest.InsertManyExistingElements
+[       OK ] SetTest.InsertManyExistingElements (0 ms)
+[ RUN      ] SetTest.MoveAssignmentOperator
+[       OK ] SetTest.MoveAssignmentOperator (0 ms)
+[ RUN      ] SetTest.MoveConstructor
+[       OK ] SetTest.MoveConstructor (0 ms)
+[ RUN      ] SetTest.InitializerListConstructorFull
+[       OK ] SetTest.InitializerListConstructorFull (0 ms)
+[----------] 22 tests from SetTest (2 ms total)
+
+[----------] 32 tests from StackTest
+[ RUN      ] StackTest.DefaultConstructor
+[       OK ] StackTest.DefaultConstructor (0 ms)
+[ RUN      ] StackTest.InitializerListConstructor
+[       OK ] StackTest.InitializerListConstructor (0 ms)
+[ RUN      ] StackTest.CopyConstructor
+[       OK ] StackTest.CopyConstructor (0 ms)
+[ RUN      ] StackTest.MoveConstructor
+[       OK ] StackTest.MoveConstructor (0 ms)
+[ RUN      ] StackTest.MoveAssignmentOperator
+[       OK ] StackTest.MoveAssignmentOperator (0 ms)
+[ RUN      ] StackTest.CopyAssignmentOperator
+[       OK ] StackTest.CopyAssignmentOperator (0 ms)
+[ RUN      ] StackTest.PushAndPop
+[       OK ] StackTest.PushAndPop (0 ms)
+[ RUN      ] StackTest.Swap
+[       OK ] StackTest.Swap (0 ms)
+[ RUN      ] StackTest.Top
+[       OK ] StackTest.Top (0 ms)
+[ RUN      ] StackTest.Empty
+[       OK ] StackTest.Empty (0 ms)
+[ RUN      ] StackTest.Size
+[       OK ] StackTest.Size (0 ms)
+[ RUN      ] StackTest.ConstMethods
+[       OK ] StackTest.ConstMethods (0 ms)
+[ RUN      ] StackTest.InsertManyBack
+[       OK ] StackTest.InsertManyBack (0 ms)
+[ RUN      ] StackTest.CustomType
+[       OK ] StackTest.CustomType (0 ms)
+[ RUN      ] StackTest.LargeStack
+[       OK ] StackTest.LargeStack (13 ms)
+[ RUN      ] StackTest.DifferentContainer
+[       OK ] StackTest.DifferentContainer (0 ms)
+[ RUN      ] StackTest.ConstStack
+[       OK ] StackTest.ConstStack (0 ms)
+[ RUN      ] StackTest.NoexceptMethods
+[       OK ] StackTest.NoexceptMethods (0 ms)
+[ RUN      ] StackTest.Iterators
+[       OK ] StackTest.Iterators (0 ms)
+[ RUN      ] StackTest.IteratorsEmptyStack
+[       OK ] StackTest.IteratorsEmptyStack (0 ms)
+[ RUN      ] StackTest.IteratorsAfterModification
+[       OK ] StackTest.IteratorsAfterModification (0 ms)
+[ RUN      ] StackTest.Destructor
+[       OK ] StackTest.Destructor (0 ms)
+[ RUN      ] StackTest.PopOnEmptyStack
+[       OK ] StackTest.PopOnEmptyStack (0 ms)
+[ RUN      ] StackTest.TopOnEmptyStack
+[       OK ] StackTest.TopOnEmptyStack (0 ms)
+[ RUN      ] StackTest.TypeTraits
+[       OK ] StackTest.TypeTraits (0 ms)
+[ RUN      ] StackTest.InsertManyBackDetailed
+[       OK ] StackTest.InsertManyBackDetailed (0 ms)
+[ RUN      ] StackTest.InsertManyBackEmptyArgs
+[       OK ] StackTest.InsertManyBackEmptyArgs (0 ms)
+[ RUN      ] StackTest.InsertManyBackDifferentTypes
+[       OK ] StackTest.InsertManyBackDifferentTypes (0 ms)
+[ RUN      ] StackTest.CoverageFix
+[       OK ] StackTest.CoverageFix (0 ms)
+[ RUN      ] StackTest.CopyConstructorWithEmptyStack
+[       OK ] StackTest.CopyConstructorWithEmptyStack (0 ms)
+[ RUN      ] StackTest.MoveConstructorWithEmptyStack
+[       OK ] StackTest.MoveConstructorWithEmptyStack (0 ms)
+[ RUN      ] StackTest.SwapWithEmptyStack
+[       OK ] StackTest.SwapWithEmptyStack (0 ms)
+[----------] 32 tests from StackTest (16 ms total)
+
+[----------] 34 tests from RBTreeTest
+[ RUN      ] RBTreeTest.GetRoot
+[       OK ] RBTreeTest.GetRoot (0 ms)
+[ RUN      ] RBTreeTest.LeftRotate
+[       OK ] RBTreeTest.LeftRotate (0 ms)
+[ RUN      ] RBTreeTest.RightRotate
+[       OK ] RBTreeTest.RightRotate (0 ms)
+[ RUN      ] RBTreeTest.Insert
+[       OK ] RBTreeTest.Insert (0 ms)
+[ RUN      ] RBTreeTest.Remove
+[       OK ] RBTreeTest.Remove (0 ms)
+[ RUN      ] RBTreeTest.FindNode
+[       OK ] RBTreeTest.FindNode (0 ms)
+[ RUN      ] RBTreeTest.GetMin
+[       OK ] RBTreeTest.GetMin (0 ms)
+[ RUN      ] RBTreeTest.RecursiveDelete
+[       OK ] RBTreeTest.RecursiveDelete (0 ms)
+[ RUN      ] RBTreeTest.InsertComplexCase
+[       OK ] RBTreeTest.InsertComplexCase (0 ms)
+[ RUN      ] RBTreeTest.RemoveNodeWithTwoChildren
+[       OK ] RBTreeTest.RemoveNodeWithTwoChildren (0 ms)
+[ RUN      ] RBTreeTest.RecursiveDeleteLeftSubtree
+[       OK ] RBTreeTest.RecursiveDeleteLeftSubtree (0 ms)
+[ RUN      ] RBTreeTest.RemoveWithRedSibling
+[       OK ] RBTreeTest.RemoveWithRedSibling (0 ms)
+[ RUN      ] RBTreeTest.RemoveWithRightSubtree
+[       OK ] RBTreeTest.RemoveWithRightSubtree (0 ms)
+[ RUN      ] RBTreeTest.ComplexRemoveBalancing
+[       OK ] RBTreeTest.ComplexRemoveBalancing (0 ms)
+[ RUN      ] RBTreeTest.RightRotateWithParent
+[       OK ] RBTreeTest.RightRotateWithParent (0 ms)
+[ RUN      ] RBTreeTest.InsertFixupRedUncleLeft
+[       OK ] RBTreeTest.InsertFixupRedUncleLeft (0 ms)
+[ RUN      ] RBTreeTest.FixDoubleBlackWithRedSibling
+[       OK ] RBTreeTest.FixDoubleBlackWithRedSibling (0 ms)
+[ RUN      ] RBTreeTest.RemoveRootNode
+[       OK ] RBTreeTest.RemoveRootNode (0 ms)
+[ RUN      ] RBTreeTest.InitializerListConstructor
+[       OK ] RBTreeTest.InitializerListConstructor (0 ms)
+[ RUN      ] RBTreeTest.EmptyInitializerList
+[       OK ] RBTreeTest.EmptyInitializerList (0 ms)
+[ RUN      ] RBTreeTest.CopyInitializerListTree
+[       OK ] RBTreeTest.CopyInitializerListTree (0 ms)
+[ RUN      ] RBTreeTest.MoveAssignmentWithData
+[       OK ] RBTreeTest.MoveAssignmentWithData (0 ms)
+[ RUN      ] RBTreeTest.CbeginOnEmptyTree
+[       OK ] RBTreeTest.CbeginOnEmptyTree (0 ms)
+[ RUN      ] RBTreeTest.MoveConstructor
+[       OK ] RBTreeTest.MoveConstructor (0 ms)
+[ RUN      ] RBTreeTest.ConstIteratorTraversal
+[       OK ] RBTreeTest.ConstIteratorTraversal (0 ms)
+[ RUN      ] RBTreeTest.CopyEmptyTree
+[       OK ] RBTreeTest.CopyEmptyTree (0 ms)
+[ RUN      ] RBTreeTest.MoveAssignmentEmptyTree
+[       OK ] RBTreeTest.MoveAssignmentEmptyTree (0 ms)
+[ RUN      ] RBTreeTest.ConstFind
+[       OK ] RBTreeTest.ConstFind (0 ms)
+[ RUN      ] RBTreeTest.MaxSize
+[       OK ] RBTreeTest.MaxSize (0 ms)
+[ RUN      ] RBTreeTest.SwapTrees
+[       OK ] RBTreeTest.SwapTrees (0 ms)
+[ RUN      ] RBTreeTest.MergeTrees
+[       OK ] RBTreeTest.MergeTrees (0 ms)
+[ RUN      ] RBTreeTest.AssignEmptyTree
+[       OK ] RBTreeTest.AssignEmptyTree (0 ms)
+[ RUN      ] RBTreeTest.BalanceAfterSequentialInsert
+[       OK ] RBTreeTest.BalanceAfterSequentialInsert (0 ms)
+[ RUN      ] RBTreeTest.RedBlackProperties
+[       OK ] RBTreeTest.RedBlackProperties (0 ms)
+[----------] 34 tests from RBTreeTest (3 ms total)
+
+[----------] 31 tests from VectorTest
+[ RUN      ] VectorTest.DefaultConstructor
+[       OK ] VectorTest.DefaultConstructor (0 ms)
+[ RUN      ] VectorTest.SizeConstructor
+[       OK ] VectorTest.SizeConstructor (0 ms)
+[ RUN      ] VectorTest.InitializerListConstructor
+[       OK ] VectorTest.InitializerListConstructor (0 ms)
+[ RUN      ] VectorTest.CopyConstructor
+[       OK ] VectorTest.CopyConstructor (0 ms)
+[ RUN      ] VectorTest.AssignmentOperator
+[       OK ] VectorTest.AssignmentOperator (0 ms)
+[ RUN      ] VectorTest.PushBack
+[       OK ] VectorTest.PushBack (0 ms)
+[ RUN      ] VectorTest.PopBack
+[       OK ] VectorTest.PopBack (0 ms)
+[ RUN      ] VectorTest.Clear
+[       OK ] VectorTest.Clear (0 ms)
+[ RUN      ] VectorTest.Swap
+[       OK ] VectorTest.Swap (0 ms)
+[ RUN      ] VectorTest.Insert
+[       OK ] VectorTest.Insert (0 ms)
+[ RUN      ] VectorTest.Erase
+[       OK ] VectorTest.Erase (0 ms)
+[ RUN      ] VectorTest.At
+[       OK ] VectorTest.At (0 ms)
+[ RUN      ] VectorTest.Front
+[       OK ] VectorTest.Front (0 ms)
+[ RUN      ] VectorTest.Back
+[       OK ] VectorTest.Back (0 ms)
+[ RUN      ] VectorTest.Data
+[       OK ] VectorTest.Data (0 ms)
+[ RUN      ] VectorTest.Empty
+[       OK ] VectorTest.Empty (0 ms)
+[ RUN      ] VectorTest.Size
+[       OK ] VectorTest.Size (0 ms)
+[ RUN      ] VectorTest.MaxSize
+[       OK ] VectorTest.MaxSize (0 ms)
+[ RUN      ] VectorTest.Reserve
+[       OK ] VectorTest.Reserve (0 ms)
+[ RUN      ] VectorTest.ShrinkToFit
+[       OK ] VectorTest.ShrinkToFit (0 ms)
+[ RUN      ] VectorTest.ConstructorWithSizeAndValue
+[       OK ] VectorTest.ConstructorWithSizeAndValue (0 ms)
+[ RUN      ] VectorTest.MoveConstructor
+[       OK ] VectorTest.MoveConstructor (0 ms)
+[ RUN      ] VectorTest.ConstIterators
+[       OK ] VectorTest.ConstIterators (0 ms)
+[ RUN      ] VectorTest.IteratorInvalidation
+[       OK ] VectorTest.IteratorInvalidation (0 ms)
+[ RUN      ] VectorTest.Noexcept
+[       OK ] VectorTest.Noexcept (0 ms)
+[ RUN      ] VectorTest.Emplace
+[       OK ] VectorTest.Emplace (0 ms)
+[ RUN      ] VectorTest.Assign
+[       OK ] VectorTest.Assign (0 ms)
+[ RUN      ] VectorTest.ExceptionSafety
+[       OK ] VectorTest.ExceptionSafety (0 ms)
+[ RUN      ] VectorTest.IteratorConversion
+[       OK ] VectorTest.IteratorConversion (0 ms)
+[ RUN      ] VectorTest.InsertMany
+[       OK ] VectorTest.InsertMany (0 ms)
+[ RUN      ] VectorTest.InsertManyBack
+[       OK ] VectorTest.InsertManyBack (0 ms)
+[----------] 31 tests from VectorTest (2 ms total)
+
+[----------] 27 tests from ArrayTest
+[ RUN      ] ArrayTest.DefaultConstructor
+[       OK ] ArrayTest.DefaultConstructor (0 ms)
+[ RUN      ] ArrayTest.InitializerListConstructor
+[       OK ] ArrayTest.InitializerListConstructor (0 ms)
+[ RUN      ] ArrayTest.InitializerListTooLarge
+[       OK ] ArrayTest.InitializerListTooLarge (0 ms)
+[ RUN      ] ArrayTest.CopyConstructor
+[       OK ] ArrayTest.CopyConstructor (0 ms)
+[ RUN      ] ArrayTest.At
+[       OK ] ArrayTest.At (0 ms)
+[ RUN      ] ArrayTest.FrontBack
+[       OK ] ArrayTest.FrontBack (0 ms)
+[ RUN      ] ArrayTest.Iterators
+[       OK ] ArrayTest.Iterators (0 ms)
+[ RUN      ] ArrayTest.Fill
+[       OK ] ArrayTest.Fill (0 ms)
+[ RUN      ] ArrayTest.Swap
+[       OK ] ArrayTest.Swap (0 ms)
+[ RUN      ] ArrayTest.EmptyArrayOperations
+[       OK ] ArrayTest.EmptyArrayOperations (0 ms)
+[ RUN      ] ArrayTest.MoveConstructor
+[       OK ] ArrayTest.MoveConstructor (0 ms)
+[ RUN      ] ArrayTest.ConstIterators
+[       OK ] ArrayTest.ConstIterators (0 ms)
+[ RUN      ] ArrayTest.OperatorBrackets
+[       OK ] ArrayTest.OperatorBrackets (0 ms)
+[ RUN      ] ArrayTest.Empty
+[       OK ] ArrayTest.Empty (0 ms)
+[ RUN      ] ArrayTest.Size
+[       OK ] ArrayTest.Size (0 ms)
+[ RUN      ] ArrayTest.NonTrivialType
+[       OK ] ArrayTest.NonTrivialType (0 ms)
+[ RUN      ] ArrayTest.FillAndSwapEmptyArray
+[       OK ] ArrayTest.FillAndSwapEmptyArray (0 ms)
+[ RUN      ] ArrayTest.AccessOutOfBounds
+[       OK ] ArrayTest.AccessOutOfBounds (0 ms)
+[ RUN      ] ArrayTest.SwapSelf
+[       OK ] ArrayTest.SwapSelf (0 ms)
+[ RUN      ] ArrayTest.SwapDifferentSizes
+[       OK ] ArrayTest.SwapDifferentSizes (0 ms)
+[ RUN      ] ArrayTest.EmptyArrayOperationsExtended
+[       OK ] ArrayTest.EmptyArrayOperationsExtended (0 ms)
+[ RUN      ] ArrayTest.SingleElementArray
+[       OK ] ArrayTest.SingleElementArray (0 ms)
+[ RUN      ] ArrayTest.FrontBackSingleElement
+[       OK ] ArrayTest.FrontBackSingleElement (0 ms)
+[ RUN      ] ArrayTest.IteratorsSingleElement
+[       OK ] ArrayTest.IteratorsSingleElement (0 ms)
+[ RUN      ] ArrayTest.DataMethod
+[       OK ] ArrayTest.DataMethod (0 ms)
+[ RUN      ] ArrayTest.ConstMethods
+[       OK ] ArrayTest.ConstMethods (0 ms)
+[ RUN      ] ArrayTest.MoveAssignment
+[       OK ] ArrayTest.MoveAssignment (0 ms)
+[----------] 27 tests from ArrayTest (6 ms total)
+
+[----------] 29 tests from MultisetTest
+[ RUN      ] MultisetTest.DefaultConstructor
+[       OK ] MultisetTest.DefaultConstructor (0 ms)
+[ RUN      ] MultisetTest.InitializerListConstructor
+[       OK ] MultisetTest.InitializerListConstructor (0 ms)
+[ RUN      ] MultisetTest.CopyConstructor
+[       OK ] MultisetTest.CopyConstructor (0 ms)
+[ RUN      ] MultisetTest.MoveConstructor
+[       OK ] MultisetTest.MoveConstructor (0 ms)
+[ RUN      ] MultisetTest.MoveAssignment
+[       OK ] MultisetTest.MoveAssignment (0 ms)
+[ RUN      ] MultisetTest.Iterators
+[       OK ] MultisetTest.Iterators (0 ms)
+[ RUN      ] MultisetTest.ConstIterators
+[       OK ] MultisetTest.ConstIterators (0 ms)
+[ RUN      ] MultisetTest.Insert
+[       OK ] MultisetTest.Insert (0 ms)
+[ RUN      ] MultisetTest.Erase
+[       OK ] MultisetTest.Erase (0 ms)
+[ RUN      ] MultisetTest.Clear
+[       OK ] MultisetTest.Clear (0 ms)
+[ RUN      ] MultisetTest.Swap
+[       OK ] MultisetTest.Swap (0 ms)
+[ RUN      ] MultisetTest.Merge
+[       OK ] MultisetTest.Merge (0 ms)
+[ RUN      ] MultisetTest.Count
+[       OK ] MultisetTest.Count (0 ms)
+[ RUN      ] MultisetTest.Find
+[       OK ] MultisetTest.Find (0 ms)
+[ RUN      ] MultisetTest.Contains
+[       OK ] MultisetTest.Contains (0 ms)
+[ RUN      ] MultisetTest.EqualRange
+[       OK ] MultisetTest.EqualRange (0 ms)
+[ RUN      ] MultisetTest.LowerBound
+[       OK ] MultisetTest.LowerBound (0 ms)
+[ RUN      ] MultisetTest.UpperBound
+[       OK ] MultisetTest.UpperBound (0 ms)
+[ RUN      ] MultisetTest.SortedOrder
+[       OK ] MultisetTest.SortedOrder (0 ms)
+[ RUN      ] MultisetTest.LargeInsert
+[       OK ] MultisetTest.LargeInsert (0 ms)
+[ RUN      ] MultisetTest.MaxSize
+[       OK ] MultisetTest.MaxSize (0 ms)
+[ RUN      ] MultisetTest.IteratorAfterErase
+[       OK ] MultisetTest.IteratorAfterErase (0 ms)
+[ RUN      ] MultisetTest.EqualRangeTest
+[       OK ] MultisetTest.EqualRangeTest (0 ms)
+[ RUN      ] MultisetTest.BoundEdgeCases
+[       OK ] MultisetTest.BoundEdgeCases (0 ms)
+[ RUN      ] MultisetTest.CopyAssignment
+[       OK ] MultisetTest.CopyAssignment (0 ms)
+[ RUN      ] MultisetTest.PerformanceTest
+[       OK ] MultisetTest.PerformanceTest (0 ms)
+[ RUN      ] MultisetTest.InsertMany
+[       OK ] MultisetTest.InsertMany (0 ms)
+[ RUN      ] MultisetTest.InsertManyToExisting
+[       OK ] MultisetTest.InsertManyToExisting (0 ms)
+[ RUN      ] MultisetTest.InsertManyReturnValues
+[       OK ] MultisetTest.InsertManyReturnValues (0 ms)
+[----------] 29 tests from MultisetTest (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 288 tests from 10 test suites ran. (82 ms total)
+[  PASSED  ] 288 tests.

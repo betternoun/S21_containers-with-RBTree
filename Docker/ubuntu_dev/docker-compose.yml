@@ -1,0 +1,9 @@
+services:
+  ubuntu_dev:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: ubuntu_dev
+    tty: true
+    volumes:
+      - ../../src:/root/project

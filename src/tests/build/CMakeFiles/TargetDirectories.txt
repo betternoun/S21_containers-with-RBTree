@@ -1,0 +1,6 @@
+/root/project/tests/build/CMakeFiles/s21_containers.dir
+/root/project/tests/build/CMakeFiles/run_tests.dir
+/root/project/tests/build/CMakeFiles/coverage.dir
+/root/project/tests/build/CMakeFiles/test.dir
+/root/project/tests/build/CMakeFiles/edit_cache.dir
+/root/project/tests/build/CMakeFiles/rebuild_cache.dir
